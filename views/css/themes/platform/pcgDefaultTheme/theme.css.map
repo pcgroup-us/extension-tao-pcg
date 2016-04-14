@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AA6BQ,mBAAU,CACN,KAAK,CCFA,IAAW,CDGhB,gBAAgB,CCTjB,OAAU,CDUT,qBAAE,CACE,KAAK,CAAE,uBAAuB",
+"sources": ["../../../../scss/themes/platform/_common/inc/_mixins.scss","../../../../scss/themes/platform/_common/inc/colors/_base.scss"],
 "names": [],
 "file": "theme.css"
 }

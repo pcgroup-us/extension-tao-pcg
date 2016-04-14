@@ -34,7 +34,9 @@ return array(
     ),
     'install' => array(
         'php' => array(
-            __DIR__.'/scripts/install/setThemeConfig.php'
+            'pcgroupUs\\pcgCore\\scripts\\install\\SetThemeConfig',
+            'pcgroupUs\\pcgCore\\scripts\\install\\SetTestRunnerConfig',
+            'pcgroupUs\\pcgCore\\scripts\\install\\SetNewTestRunner'
         )
     ),
     'uninstall' => array(),
