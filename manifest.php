@@ -23,7 +23,7 @@ return array(
     'label' => 'PCG core extension',
     'description' => '',
     'license' => 'GPL-2.0',
-    'version' => '0.1',
+    'version' => '1.0.0',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'tao' => '>=2.22.1'
@@ -32,7 +32,13 @@ return array(
     'acl' => array(
         array('grant','http://www.tao.lu/Ontologies/generis.rdf#pcgCoreManager',array('ext' => 'pcgCore'))
     ),
-    'install' => array(),
+    'install' => array(
+        'php' => array(
+            'pcgroupUs\\pcgCore\\scripts\\install\\SetThemeConfig',
+            'pcgroupUs\\pcgCore\\scripts\\install\\SetTestRunnerConfig',
+            'pcgroupUs\\pcgCore\\scripts\\install\\SetNewTestRunner'
+        )
+    ),
     'uninstall' => array(),
     'routes' => array(
         '/pcgCore' => 'pcgroupUs\\pcgCore\\controller'
