@@ -26,7 +26,8 @@ return array(
     'version' => '1.0.1',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
-        'tao' => '>=2.22.1'
+        'tao' => '>=2.22.1',
+        'taoQtiTest' => '>=2.25.0'
     ),
     'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#pcgCoreManager',
     'acl' => array(

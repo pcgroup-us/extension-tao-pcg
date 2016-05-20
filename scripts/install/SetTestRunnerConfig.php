@@ -59,7 +59,8 @@ class SetTestRunnerConfig extends \common_ext_action_InstallAction
             'next-section' => true,
             'timer' => array(
                 'target' => 'client'
-            )
+            ),
+            'test-session' => 'oat\\taoQtiTest\\models\\runner\\session\\TestSession'
         );
 
         $qtiTest = \common_ext_ExtensionsManager::singleton()->getExtensionById('taoQtiTest');
