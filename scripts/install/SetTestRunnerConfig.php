@@ -28,10 +28,22 @@ class SetTestRunnerConfig extends \common_ext_action_InstallAction
     {
         $pcgConfig = array(
             'timerWarning' => array(
-                'assessmentItemRef' => 300,
-                'assessmentSection' => 300,
-                'testPart'          => 300,
-                'assessmentTest'    => 300
+                'assessmentItemRef' => array(
+                    300 => 'warning',
+                    120 => 'error'
+                ),
+                'assessmentSection' => array(
+                    300 => 'warning',
+                    120 => 'error'
+                ),
+                'testPart'          => array(
+                    300 => 'warning',
+                    120 => 'error'
+                ),
+                'assessmentTest'    => array(
+                    300 => 'warning',
+                    120 => 'error'
+                )
             ),
             'progress-indicator' => 'position',
             'progress-indicator-scope' => 'testSection',

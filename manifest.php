@@ -23,7 +23,7 @@ return array(
     'label' => 'PCG core extension',
     'description' => '',
     'license' => 'GPL-2.0',
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'tao' => '>=2.22.1'
@@ -39,6 +39,7 @@ return array(
             'pcgroupUs\\pcgCore\\scripts\\install\\SetNewTestRunner'
         )
     ),
+    'update' => 'pcgroupUs\\pcgCore\\scripts\\update\\Updater',
     'uninstall' => array(),
     'routes' => array(
         '/pcgCore' => 'pcgroupUs\\pcgCore\\controller'
