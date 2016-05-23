@@ -23,10 +23,11 @@ return array(
     'label' => 'PCG core extension',
     'description' => '',
     'license' => 'GPL-2.0',
-    'version' => '1.0.1',
+    'version' => '1.0.2',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
-        'tao' => '>=2.22.1'
+        'tao' => '>=2.22.1',
+        'taoQtiTest' => '>=2.25.0'
     ),
     'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#pcgCoreManager',
     'acl' => array(

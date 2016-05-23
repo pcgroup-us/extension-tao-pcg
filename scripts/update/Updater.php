@@ -47,5 +47,14 @@ class Updater extends \common_ext_ExtensionUpdater
 
             $this->setVersion('1.0.1');
         }
+
+        if ($this->isVersion('1.0.1')) {
+
+            $testRunnerConfig = \common_ext_ExtensionsManager::singleton()->getExtensionById('taoQtiTest')->getConfig('testRunner');
+            $testRunnerConfig['test-session'] = 'oat\\taoQtiTest\\models\\runner\\session\\TestSession';
+            \common_ext_ExtensionsManager::singleton()->getExtensionById('taoQtiTest')->setConfig('testRunner', $testRunnerConfig);
+
+            $this->setVersion('1.0.2');
+        }
     }
 }
