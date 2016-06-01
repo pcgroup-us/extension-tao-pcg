@@ -23,7 +23,7 @@ return array(
     'label' => 'PCG core extension',
     'description' => '',
     'license' => 'GPL-2.0',
-    'version' => '1.0.2',
+    'version' => '1.0.3',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'tao' => '>=2.22.1',

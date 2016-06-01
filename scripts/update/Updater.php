@@ -56,5 +56,22 @@ class Updater extends \common_ext_ExtensionUpdater
 
             $this->setVersion('1.0.2');
         }
+
+        if ($this->isVersion('1.0.2')) {
+
+            $testRunnerConfig = \common_ext_ExtensionsManager::singleton()->getExtensionById('taoQtiTest')->getConfig('testRunner');
+
+            if (array_key_exists('timerWarning', $testRunnerConfig)) {
+                foreach ($testRunnerConfig['timerWarning'] as &$value) {
+                    $value = array_map(function ($row) {
+                        return $row !== 'error' ? $row : 'danger';
+                    }, $value);
+                }
+
+                \common_ext_ExtensionsManager::singleton()->getExtensionById('taoQtiTest')->setConfig('testRunner', $testRunnerConfig);
+            }
+
+            $this->setVersion('1.0.3');
+        }
     }
 }

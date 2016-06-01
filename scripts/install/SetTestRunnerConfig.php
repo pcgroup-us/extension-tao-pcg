@@ -30,19 +30,19 @@ class SetTestRunnerConfig extends \common_ext_action_InstallAction
             'timerWarning' => array(
                 'assessmentItemRef' => array(
                     300 => 'warning',
-                    120 => 'error'
+                    120 => 'danger'
                 ),
                 'assessmentSection' => array(
                     300 => 'warning',
-                    120 => 'error'
+                    120 => 'danger'
                 ),
                 'testPart'          => array(
                     300 => 'warning',
-                    120 => 'error'
+                    120 => 'danger'
                 ),
                 'assessmentTest'    => array(
                     300 => 'warning',
-                    120 => 'error'
+                    120 => 'danger'
                 )
             ),
             'progress-indicator' => 'position',
